@@ -98,7 +98,7 @@ class EntryEditor extends Component {
 
     const editorWithPreview = (
       <ScrollSync>
-        <div className={styles("container")}>
+        <div className='nc-entryEditor-container'>
           <SplitPane
             defaultSize="50%"
             onDragStarted={this.handleSplitPaneDragStart}
@@ -121,15 +121,15 @@ class EntryEditor extends Component {
     );
 
     const editorWithoutPreview = (
-      <div className={styles("noPreviewEditorContainer")}>
+      <div className='nc-entryEditor-noPreviewEditorContainer'>
         {editor}
       </div>
     );
 
     return (
-      <div className={styles("root")}>
+      <div className='nc-entryEditor-root'>
         { collectionPreviewEnabled && this.state.previewVisible ? editorWithPreview : editorWithoutPreview }
-        <div className={styles("footer")}>
+        <div className='nc-entryEditor-footer'>
           <Toolbar
             isPersisting={entry.get('isPersisting')}
             onPersist={this.handleOnPersist}

@@ -82,8 +82,8 @@ export default class AppHeader extends React.Component {
         onLeftIconClick={toggleDrawer}
         onRightIconClick={this.handleRightIconClick}
       >
-        <IndexLink to="/" className={styles("homeLink")}>
-          <FontIcon value="home" className={styles("icon")} />
+        <IndexLink to="/" className='nc-appHeader-homeLink'>
+          <FontIcon value="home" className='nc-appHeader-icon' />
         </IndexLink>
         <IconMenu
           theme={theme}
